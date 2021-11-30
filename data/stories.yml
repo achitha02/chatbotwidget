@@ -1,0 +1,128 @@
+version: "3.0"
+stories:
+- story: happy path
+  steps:
+  - intent: hello
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: finegreet
+  steps:
+  - intent: greet1
+  - action: utter_greet1
+- story: corona info
+  steps:
+  - intent: corona_info
+  - action: utter_corona_info
+- story: corona risk
+  steps:
+  - intent: corona_risk
+  - action: utter_corona_risk
+- story: corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+- story: food spread
+  steps:
+  - intent: corona_food_spread
+  - action: utter_corona_food_spread
+- story: warm spread
+  steps:
+  - intent: corona_warm_spread
+  - action: utter_corona_warm_spread
+- story: community spread
+  steps:
+  - intent: community_spread
+  - action: utter_community_spread
+- story: aged people
+  steps:
+  - intent: age_people
+  - action: utter_age_people
+- story: high risk
+  steps:
+  - intent: age_high_risk
+  - action: utter_age_high_risk
+- story: specific age
+  steps:
+  - intent: specific_age
+  - action: utter_specific_age
+- story: symptoms
+  steps:
+  - intent: symptoms
+  - action: utter_symptoms
+- story: primary symptoms
+  steps:
+  - intent: primary_symp
+  - action: utter_primary_symp
+- story: treatments
+  steps:
+  - intent: treatment
+  - action: utter_treatment
+  - intent: self_care
+  - action: utter_self_care
+  - intent: medical
+  - action: utter_medical
+- story: prevention
+  steps:
+  - intent: prevention
+  - action: utter_prevention
+- story: overall cases
+  steps:
+  - intent: overall_cases
+  - action: utter_overall_cases
+- story: active cases
+  steps:
+  - intent: active_cases
+  - action: utter_active_cases
+- story: closed cases
+  steps:
+  - intent: closed_cases
+  - action: utter_closed_cases
+- story: affect
+  steps:
+  - intent: affect
+  - action: utter_affect
+- story: variants
+  steps:
+  - intent: variants
+  - action: utter_variants
+- story: delta
+  steps:
+  - intent: delta_variant
+  - action: utter_delta_variant
+- story: alpha
+  steps:
+  - intent: alpha_variant
+  - action: utter_alpha_variant
+- story: virus
+  steps:
+  - intent: virus
+  - action: utter_virus
+- story: beta
+  steps:
+  - intent: beta_variant
+  - action: utter_beta_variant
+- story: gamma
+  steps:
+  - intent: gamma_variant
+  - action: utter_gamma_variant
